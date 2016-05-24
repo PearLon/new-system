@@ -35,7 +35,7 @@ public class GuitarSetvlet extends HttpServlet {
 		GuitarDaoImpl dao=new GuitarDaoImpl();
 		request.setAttribute("list", dao.search(model));
 		System.out.print(dao.search(model));
-		request.getRequestDispatcher("/result.jsp").forward(request,response);
+		request.getRequestDispatcher("/result2.jsp").forward(request,response);
 		
 		
 		
